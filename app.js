@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-// 登录模块
+// 登录模块，依赖引入
 var login = require('./modules/login/index');
 app.use('/login', login);
 
